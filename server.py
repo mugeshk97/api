@@ -3,7 +3,7 @@ from functools import wraps
 
 app = Flask(__name__)
 
-_token = 'my'
+_token = 'mytoken'
 
 def response(status, message, data):
     return(jsonify({"status":status,"message":message,"data":data}))
